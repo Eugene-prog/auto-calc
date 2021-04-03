@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Doc</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <img src="img/granta.png" class="mx-auto d-block" width="300" alt="...">
+    <h3 class="text-center">Рассчитать стоимость владения автомобилем</h3>
+
+    <div class="row">
+      <div class="col-4 offset-4">
+        <form name="total-form">
+          <div class="form-group mb-1">
+            <label for="fuelPrice" class="form-label">Стоимость одного литра топлива:</label>
+            <input id="fuelPrice" name="fuelPrice" type="number" class="form-control">
+          </div>
+          <div class=" form-group mb-1">
+            <label for="fullTankFuel" class="form-label">Литров в топливном баке:</label>
+            <input id="fullTankFuel" name="fullTankFuel" type="number" class="form-control">
+          </div>
+          <div class=" form-group mb-1">
+            <label for="fullTankMileage" class="form-label">Пробег на топливном баке:</label>
+            <input id="fullTankMileage" name="fullTankMileage" type="number" class="form-control">
+          </div>
+          <div class=" form-group mb-3">
+            <label for="yearDist" class="form-label">Пробег за год:</label>
+            <input id="yearDist" name="yearDist" type="number" class="form-control">
+          </div>
+          <div class=" form-group mb-3">
+            <label for="insuranceOsago" class="form-label">Стоимость страховки ОСАГО:</label>
+            <input id="insuranceOsago" name="insuranceOsago" type="number" class="form-control">
+          </div>
+          <div class=" form-group mb-3">
+            <label for="insuranceKasko" class="form-label">Стоимость страховки КАСКО:</label>
+            <input id="insuranceKasko" name="insuranceKasko" type="number" class="form-control">
+          </div>
+          <div class="form-group mb-3">
+            <label for="carTax" class="form-label">Транспортный налог:</label>
+            <input id="carTax" name="carTax" type="number" class="form-control">
+          </div>
+          <div class="form-group mb-3">
+            <label for="maintranceYear" class="form-label">Стоимость ТО и ремонта
+              в год:</label>
+            <input id="maintranceYear" name="maintranceYear" type="number" class="form-control">
+          </div>
+          <div class="form-group mb-3">
+            <label for="additionalCost" class="form-label">Дополнительные
+              расходы:</label>
+            <input id="additionalCost" name="additionalCost" type="number" class="form-control">
+          </div>
+          <div class="form-group mb-3">
+            <label for="ticket" class="form-label">Штрафы:</label>
+            <input id="ticket" name="ticket" type="number" class="form-control">
+          </div>
+          <div class="form-group mb-3">
+            <label for="rentCarPlace" class="form-label">Аренда машиноместа:</label>
+            <input id="rentCarPlace" name="rentCarPlace" type="number" class="form-control">
+          </div>
+
+          <button class="btn btn-primary result-btn" type="submit">Рассчитать</button>
+          <button class="btn btn-success test-btn">Тестовые данные</button>
+        </form>
+
+        <div class="info mt-4">
+          <p>
+            Траты за год: <strong><span class="totalCount">0 руб.</span></strong>
+          </p>
+          <p>
+            Стоимость владения за день: <strong><span class="resultOneDay">0 руб.</span></strong>
+          </p>
+          <p>
+            Стоимость километра пути: <strong><span class="costMileage">0 руб.</span></strong>
+          </p>
+          <p>
+            Расход л/100 км: <strong><span class="costOneKm">0 руб.</span></strong>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>
